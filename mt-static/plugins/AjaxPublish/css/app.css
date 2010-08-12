@@ -1,4 +1,16 @@
 /* Template Listing */
+th.comments { 
+    width: 16px; 
+    background: url('../images/icon-comment.png') no-repeat center 1px;
+}
+th.publish { 
+    width: 16px; 
+    background: url('../../../images/nav-icon-rebuild.gif') no-repeat center 4px;
+}
+th.publish span, 
+th.comments span { 
+    display: none;
+}
 td.publish { width: 16px; }
 td.publish a {
     width: 16px;

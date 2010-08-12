@@ -6,9 +6,10 @@ use strict;
 sub xfrm_list_entries {
     my ( $cb, $app, $html_ref ) = @_;
 
-    $$html_ref =~ s{(<th class="view"><span><__trans phrase="View"></span></th>)}{<th class="publish"><span>Pub.</span></th>$1}msg;
+    $$html_ref =~ s{(<th class="view"><span><__trans phrase="View"></span></th>)}{<th class="comments"><span>Comments</span></th><th class="publish"><span>Pub.</span></th>$1}msg;
 
     my $html = <<"EOF";
+<td class="comments"><span><mt:if name="status_publish"><mt:if name="allow_comments"><mt:var name="comment_count"><mt:else>-</mt:if><mt:else></mt:if></span></td>
 <td class="publish"><mt:if name="status_publish"><a href="javascript:void(0)"><span><__trans phrase="Publish"></span></a></mt:if></td>
 EOF
 

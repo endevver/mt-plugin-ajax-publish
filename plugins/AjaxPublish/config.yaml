@@ -1,7 +1,7 @@
 id: AjaxPublish
 name: 'AJAX Publisher'
 description: 'Publish entries and pages quickly and easily using a single click.'
-version: 0.1
+version: 0.2
 
 callbacks:
   MT::App::CMS::template_source.entry_table: $AjaxPublish::AjaxPublish::Plugin::xfrm_list_entries
