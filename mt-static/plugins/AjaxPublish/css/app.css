@@ -1,0 +1,11 @@
+/* Template Listing */
+td.publish { width: 16px; }
+td.publish a {
+    width: 16px;
+    height: 14px;
+    display: block;
+    background: url('../../../images/nav-icon-rebuild.gif') no-repeat center 0px;
+}
+td.publish a span {
+    display: none;
+}
